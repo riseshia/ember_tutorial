@@ -1,0 +1,7 @@
+<h1>Edit Post</h1>
+
+Title: {{input value=model.title}}<br/>
+Description: <br/>
+{{textarea value=model.description cols="80" rows="6"}}<br/>
+<button {{action "save"}}>Update</button>
+{{outlet}}

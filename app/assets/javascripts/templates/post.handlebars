@@ -1,0 +1,19 @@
+<h1>Post</h1>
+
+<p>Your content here.</p>
+
+<h1>{{model.title}}</h1>
+
+<p>{{model.description}}</p>
+
+{{#link-to 'posts.edit' model}}
+  Edit
+{{/link-to}}
+<br>
+
+<a href="#" {{action "delete"}}>Delete</a>
+<br>
+{{#link-to 'posts'}}
+  Go to posts
+{{/link-to}}
+{{outlet}}

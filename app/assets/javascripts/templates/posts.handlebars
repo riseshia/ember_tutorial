@@ -1,0 +1,21 @@
+<h1>Posts</h1>
+
+<p>Your content here.</p>
+
+<ul>
+  {{#each post in model}}
+    <li>
+    {{#link-to 'post' post}}
+      {{post.title}}
+    {{/link-to}}
+    </li>
+  {{/each}}
+</ul>
+
+{{#link-to 'posts.new'}}
+New Post
+{{/link-to}}
+
+{{model.length}} posts
+
+{{outlet}}
